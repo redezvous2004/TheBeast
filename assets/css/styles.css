@@ -22,6 +22,7 @@ a {
 }
 .content {
     width: var(--popular-width);
+    max-width: calc(100% - 48px);
     margin: 200px auto 0;
 }
 .line-clamp-of-Title {
@@ -40,41 +41,48 @@ a {
 .navigate {
     background: #fffcf4;
     margin-top: -200px;
+    position: sticky;
+    z-index: 1;
+    top: -28px;
 }
 .navigate .fixed-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 47px;
+    padding: 36px 0 8px;
 }
 .navigate .fixed-nav .list {
     display: flex;
     align-items: center;
-    gap: 42px;
     margin-left: auto;
-    margin-right: 70px;
+    margin-right: 49px;
 }
 .navigate .fixed-nav li > a {
+    padding: 8px 21px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: var(--secondary-color);
 }
+.navigate .fixed-nav li > a:hover {
+    text-shadow: 1px 0 0 #000;
+}
 .navigate .fixed-nav .bold {
-    font-weight: 600;
-    color: var(--primary-color);
+    /* font-weight: 600;
+    color: var(--primary-color); */
     position: relative;
 }
-.navigate .fixed-nav .bold::after {
+/* .navigate .fixed-nav .bold::after {
     content: "";
     display: block;
     position: absolute;
-    top: 25px;
+    left: 21px;
+    bottom: 6px;
     width: 12px;
     height: 2px;
     border-radius: 1px;
     background: var(--primary-color);
-}
+} */
 .signup-button {
     min-width: 144px;
     font-weight: 600;
@@ -98,14 +106,15 @@ a {
 .hero-part .content {
     display: flex;
     align-items: center;
-    height: calc(100vh - 86px);
+    justify-content: center;
+    padding: 65px 0;
 }
 .hero-part .part1 {
-    width: 48.72%;
+    width: 570px;
     position: relative;
 }
 .hero-part .part1 .main-img {
-    width: 82.46%;
+    width: 470px;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
@@ -155,8 +164,8 @@ a {
     margin-left: 16px;
 }
 .hero-part .part2 {
-    width: 51.28%;
-    padding: 64px 0 63px 130px;
+    width: 470px;
+    margin-left: 130px;
 }
 .hero-part .part2 .title {
     font-family: "Sen", sans-serif;
@@ -373,8 +382,9 @@ a {
 }
 .guest .guest-detail {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 241px;
 }
 .guest .avatar img {
     width: 72px;
@@ -431,6 +441,7 @@ a {
 /* ==================================Introduce and Sign-up================================== */
 .introduce-and-signup .content {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 130px;
 }
@@ -494,6 +505,7 @@ a {
 .join-to-fit .content {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 130px;
 }
 .join-to-fit .description {
