@@ -122,7 +122,7 @@ a {
 .hero-part .part1 .quantity {
     position: absolute;
     right: 0;
-    top: 393px;
+    bottom: 48px;
     padding: 24px 58px 24px 24px;
     border-radius: 12px 0 0 12px;
     background: #fff;
@@ -207,6 +207,9 @@ a {
 .hero-part .action {
     display: flex;
     align-items: center;
+    background: #fffcf4;
+    border: 0;
+    cursor: pointer;
 }
 .hero-part .action .start {
     display: flex;
@@ -230,7 +233,8 @@ a {
 }
 .hero-part .part2 .stat {
     display: flex;
-    gap: 28px;
+    align-items: baseline;
+    gap: 14px;
     margin-top: 8px;
 }
 .hero-part .stat .emphase {
@@ -240,8 +244,8 @@ a {
     line-height: 1.23;
     color: var(--primary-color);
 }
-.hero-part .stat .kind {
-    margin-left: 8px;
+.hero-part .stat .emphase:not(.emphase:first-child) {
+    margin-left: 28px;
 }
 /* =====================================Popular=============================== */
 .popular-page {
